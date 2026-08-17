@@ -26,7 +26,7 @@ export default function Navbar() {
     <header
       className={`fixed inset-x-0 top-0 z-40 transition-all duration-300 ${
         scrolled || open
-          ? 'border-b border-cyber-cyan/20 bg-dark-blue/90 backdrop-blur-md'
+          ? 'border-b border-cyber-cyan/20 bg-dark-blue/95 md:bg-dark-blue/90 md:backdrop-blur-md'
           : 'bg-transparent'
       }`}
     >

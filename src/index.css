@@ -51,6 +51,116 @@ body {
   animation: whatsapp-pulse 2.4s ease-in-out infinite;
 }
 
+.hero-background {
+  opacity: 0.2;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-visual {
+  isolation: isolate;
+  padding: 1.25rem;
+}
+
+.hero-visual::before,
+.hero-visual::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+}
+
+.hero-visual::before {
+  inset: 7%;
+  border-radius: 2rem;
+  background: radial-gradient(circle, rgba(0, 207, 255, 0.28), transparent 67%);
+}
+
+.hero-visual::after {
+  inset: 0;
+  opacity: 0.38;
+  background-image:
+    linear-gradient(rgba(0, 207, 255, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 207, 255, 0.12) 1px, transparent 1px);
+  background-size: 1.4rem 1.4rem;
+  mask-image: radial-gradient(ellipse, black 32%, transparent 72%);
+}
+
+.hero-orbit {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  border: 1px solid rgba(0, 207, 255, 0.26);
+  border-radius: 9999px;
+}
+
+.hero-orbit-one {
+  inset: 2% -4%;
+  transform: rotate(-12deg);
+}
+
+.hero-orbit-two {
+  inset: 10% -8%;
+  border-color: rgba(1, 93, 221, 0.42);
+  transform: rotate(18deg);
+}
+
+.hero-image-frame {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(0, 207, 255, 0.46);
+  border-radius: 1.5rem;
+  background: linear-gradient(145deg, rgba(0, 207, 255, 0.26), rgba(0, 9, 20, 0.95) 28%);
+  padding: 0.45rem;
+  box-shadow:
+    0 0 0 1px rgba(1, 93, 221, 0.32),
+    0 20px 56px rgba(0, 0, 0, 0.48),
+    0 0 48px rgba(0, 140, 255, 0.22);
+}
+
+.hero-central-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 1.15rem;
+  object-fit: cover;
+}
+
+.hero-image-frame::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(234, 251, 255, 0.16), transparent 28%, transparent 72%, rgba(0, 207, 255, 0.12));
+}
+
+.hero-image-caption {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  border: 1px solid rgba(0, 207, 255, 0.36);
+  border-radius: 9999px;
+  background: rgba(0, 9, 20, 0.86);
+  padding: 0.4rem 0.65rem;
+  color: rgba(234, 251, 255, 0.9);
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+
+.hero-caption-dot {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 9999px;
+  background: var(--color-cyber-cyan);
+  box-shadow: 0 0 10px var(--color-cyber-cyan);
+}
+
 /* Primary CTA */
 .btn-primary {
   position: relative;
@@ -178,5 +288,35 @@ body {
 
   .btn-primary::before {
     display: none;
+  }
+}
+
+@media (max-width: 767px), (hover: none) and (pointer: coarse) {
+  .whatsapp-pulse {
+    animation: none;
+  }
+
+  .hero-background {
+    opacity: 0.12;
+  }
+
+  .hero-visual {
+    padding: 0.75rem;
+  }
+
+  .hero-visual::after,
+  .hero-orbit-two {
+    display: none;
+  }
+
+  .hero-orbit-one {
+    inset: 4% -2%;
+  }
+
+  .hero-image-frame {
+    box-shadow:
+      0 0 0 1px rgba(1, 93, 221, 0.26),
+      0 14px 32px rgba(0, 0, 0, 0.36),
+      0 0 26px rgba(0, 140, 255, 0.16);
   }
 }

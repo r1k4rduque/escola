@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Award, QrCode, Smartphone, Sparkles, Users } from 'lucide-react'
+import {QrCode, Smartphone, Sparkles, Users } from 'lucide-react'
 import SectionWrapper from './SectionWrapper'
 import { fadeUp, staggerContainer } from './motion'
 
@@ -18,13 +18,7 @@ const items = [
     icon: Sparkles,
     soon: false,
   },
-  {
-    title: 'Certificação por fase',
-    description:
-      'Cada etapa concluída gera um certificado próprio, mostrando evolução real.',
-    icon: Award,
-    soon: false,
-  },
+  
   {
     title: 'App de lembretes diários',
     description:
@@ -61,7 +55,7 @@ export default function DifferentiatorsSection() {
       </motion.div>
 
       <motion.div
-        className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
+        className="grid gap-5 sm:grid-cols-2 lg:grid-cols-2"
         variants={staggerContainer}
       >
         {items.map(({ title, description, icon: Icon, soon }) => (

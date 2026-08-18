@@ -12,23 +12,14 @@ export default function About() {
           Sobre a escola
         </p>
         <h2 className="font-heading text-2xl font-bold text-ice-white sm:text-3xl">
-          Formação modular, progressiva e feita para o seu perfil
+          Aulas diretas para o seu perfil e necessidade!
         </h2>
         <div className="mt-6 space-y-4 text-base leading-relaxed text-ice-white/75">
           <p>
-            A {siteConfig.schoolName} é uma escola de informática modular: todo
-            aluno começa pela base comumInformática Essencial e, com o
-            avanço, escolhe a trilha que faz mais sentido para o seu objetivo.
+            A {siteConfig.schoolName} oferece aulas particulares de informática, adaptadas ao ritmo, conhecimento e objetivos de cada aluno. Para quem está começando, oferecemos uma base completa de informática e, a partir dela, três trilhas de especialização: Tecnologia Gamer, Informática para Negócios e outras áreas da tecnologia.
           </p>
           <p>
-            São três caminhos claros: a base para o dia a dia e o trabalho, a
-            trilha Gamer com programação e jogos, e a trilha de Negócios com
-            Excel avançado, Power BI e automação.
-          </p>
-          <p>
-            Turmas pequenas e atenção próxima ao aluno uma estrutura pensada
-            para acompanhar de perto, do primeiro clique ao certificado de cada
-            fase.
+            Cada trilha foi pensada para desenvolver conhecimentos específicos e preparar o aluno para diferentes possibilidades dentro da tecnologia. E, caso nenhuma delas atenda completamente às suas necessidades, também oferecemos a opção de criar uma trilha personalizada, combinando conteúdos de diferentes áreas para montar o caminho ideal para você.
           </p>
         </div>
       </div>

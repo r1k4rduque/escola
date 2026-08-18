@@ -13,7 +13,7 @@ const items = [
   {
     title: 'Apostila de apoio',
     description:
-      'Material que complementa o professor — não o substitui — para revisar em casa.',
+      'Material que complementar personalizado para cada aula de cada aluno',
     icon: BookOpen,
   },
   {

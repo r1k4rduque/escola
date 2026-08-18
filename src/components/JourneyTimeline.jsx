@@ -9,7 +9,7 @@ const stages = [
     title: 'Base comum',
     duration: '≈ 3 meses',
     description:
-      'Informática Essencial, todo aluno passa por aqui, independente da trilha futura.',
+      'Todo aluno começa com uma base sólida de informática, desenvolvendo os conhecimentos necessários para seguir sua jornada.',
     icon: Layers,
   },
   {
@@ -17,7 +17,7 @@ const stages = [
     title: 'Escolha da trilha',
     duration: '3 a 6 meses',
     description:
-      'Continue em Informática Essencial avançado ou migre para Tecnologia Gamer ou Informática para Negócios.',
+      'Continue em Informática Essencial ou migre para Tecnologia Gamer ou Informática para Negócios.',
     icon: Route,
   },
   {

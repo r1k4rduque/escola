@@ -16,11 +16,10 @@ export default function CoursesSection() {
           Cursos
         </p>
         <h2 className="font-heading text-2xl font-bold text-ice-white sm:text-3xl">
-          Três trilhas. Um ponto de partida em comum.
+          Três trilhas de aprendizado. Escolha o caminho ideal para você!
         </h2>
         <p className="mt-3 text-ice-white/75">
-          Escolha o caminho que combina com você ou descubra no WhatsApp qual
-          faz mais sentido para o seu objetivo.
+          Confira nossas sugestões de trilhas de aulas. E se precisar, criamos uma grade personalizada para você!
         </p>
       </motion.div>
 
